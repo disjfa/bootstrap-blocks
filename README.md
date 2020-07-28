@@ -1,7 +1,6 @@
 # Bootstrap blocks
 
 [![MIT License][license-badge]][LICENSE]
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 [![Watch on GitHub][github-watch-badge]][github-watch]
 [![Star on GitHub][github-star-badge]][github-star]
@@ -13,22 +12,6 @@
 
 [Checkout the blocks](https://disjfa.github.io/bootstrap-blocks/)
 
-### Instalation
-
-Clone or fork this repository and then using npm install it.
-
-```yaml
-git clone git@github.com:disjfa/bootstrap-blocks.git
-```
-
-```yaml
-cd bootstrap-blocks
-```
-
-```yaml
-npm install
-```
-
 ### Develop
 
 Start the local server. This will start the webpack encore watch script and start an 11ty server.
@@ -36,16 +19,6 @@ Start the local server. This will start the webpack encore watch script and star
 ```yaml
 npm run start
 ```
-
-### Deploy
-
-Build and deploy to gh-pages
-
-```yaml
-npm run deploy
-```
-
-This will build the css and javascript, then generate all the 11ty static site files and deploy.
 
 ### Enjoy
 

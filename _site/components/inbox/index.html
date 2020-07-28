@@ -1,13 +1,14 @@
 ---
 layout: layout.html
 title: Inbox
+tags: page
 ---
 
-<div class="container py-3">
-    {% capture my_variable -%}
-        {% include ./demo-1.html %}
-    {%- endcapture %}
 
-    {{ my_variable | myFilter: 'html' }}
-</div>
+{% capture my_variable -%}
+    {% include ./demo-1.html %}
+{%- endcapture %}
+
+{{ my_variable | myFilter: 'html' }}
+
 

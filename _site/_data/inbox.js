@@ -1,29 +1,17 @@
+const faker = require('faker');
+
 module.exports = function () {
   const data = [];
-  data.push({
-    unread: true,
-    starred: false,
-    name: 'hans',
-    subject: 'Dit is een onderwerp',
-    attachment: true,
-    date: '2020',
-  });
-  data.push({
-    unread: false,
-    starred: true,
-    name: 'hans',
-    subject: 'Dit is een onderwerp',
-    attachment: false,
-    date: '2020',
-  });
-  data.push({
-    unread: true,
-    starred: false,
-    name: 'hans',
-    subject: 'Dit is een onderwerp',
-    attachment: false,
-    date: '2020',
-  });
+  for (let i = 1; i < 12; i++) {
+    data.push ({
+      unread: faker.random.boolean(),
+      starred: faker.random.boolean(),
+      name: faker.name.findName(),
+      subject: faker.random.words(),
+      attachment: faker.random.boolean(),
+      date: faker.date.recent().toUTCString(),
+    });
+  }
   return data;
 };
 

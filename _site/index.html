@@ -4,10 +4,48 @@ title: Alle items
 ---
 
 <div class="container py-3">
-    <h1>All pages</h1>
-    {% for post in collections.all %}
-        <a href="{{ post.url | url }}">
-            {{ post.data.title }}
-        </a>
-    {% endfor %}
+    <h1>Bootstrap blocks</h1>
+    <p>
+        So what do we have here. These are a set of basic blocks that can be used in websites using
+        <a href="https://getbootstrap.com/">bootstrap</a>. On every page there is an example and a code block. The text
+        in the codes are identical, as they use the same html. So hopefully they work.
+    </p>
+    <p>
+        The things we use are:
+    </p>
+    <ul>
+        <li>
+            <a href="https://getbootstrap.com/">Bootstrap</a> for the styling.
+        </li>
+        <li>
+            <a href="https://fontawesome.com/">Font awesome</a> for the icons.
+        </li>
+        <li>
+            <a href="https://unsplash.com/">unsplash</a> for the images.
+        </li>
+        <li>
+            <a href="https://www.11ty.dev/">eleventy</a> for building this page.
+        </li>
+        <li>
+            <a href="https://github.com/">github</a> for hosting.
+        </li>
+    </ul>
+    <p>
+        If you have any ideas, tips, tricks and such please let us know on
+        <a href="https://github.com/disjfa/bootstrap-blocks">github</a>. If you would like to add a template please
+        create a <a href="https://codepen.io/">codepen</a> and let us know. And alway be excelent to eachother.
+    </p>
+</div>
+<hr>
+<div class="container py-3">
+    <h2>All pages</h2>
+    <div class="row">
+        {% for post in collections.page %}
+            <div class="col-md-4 my-2">
+                <a href="{{ post.url | url }}">
+                    {{ post.data.title }}
+                </a>
+            </div>
+        {% endfor %}
+    </div>
 </div>

@@ -1,0 +1,12 @@
+---
+permalink: /api/pages.json
+---
+[
+    {% for post in collections.page %}
+    {
+        "title": "{{ post.data.title }}",
+        "url": "{{ post.url | url }}"
+        "base": "{{ post.url }}"
+    },
+    {% endfor %}
+]

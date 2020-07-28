@@ -34,6 +34,21 @@ title: My Rad Blog
     </div>
 </nav>
 {{ content | safe }}
+
+<div class="bg-light py-5">
+    <footer class="container">
+        <div class="text-right">
+            <a href="#" class="js-share btn btn-outline-secondary" data-title="{{ title }}" aria-label="Share this page">
+                <i class="fa fa-share-alt"></i>
+                Share
+            </a>
+            <a href="https://github.com/disjfa/bootstrap-blocks" class="btn btn-outline-secondary">
+                <i class="fab fa-github"></i>
+                Github
+            </a>
+        </div>
+    </footer>
+</div>
 {%- for js in encore.app.js -%}
     <script src="{{ js }}"></script>
 {%- endfor -%}
