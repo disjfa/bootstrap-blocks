@@ -1,0 +1,21 @@
+[
+    
+    {
+        "title": "Profile page",
+        "url": "/bootstrap-blocks/components/profile/"
+        "base": "/components/profile/"
+    },
+    
+    {
+        "title": "Inbox",
+        "url": "/bootstrap-blocks/components/inbox/"
+        "base": "/components/inbox/"
+    },
+    
+    {
+        "title": "Pricing",
+        "url": "/bootstrap-blocks/components/pricing/"
+        "base": "/components/pricing/"
+    },
+    
+]

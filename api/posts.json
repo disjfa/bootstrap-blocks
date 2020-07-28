@@ -1,0 +1,18 @@
+[
+    
+    {
+        "title": "Profile page",
+        "url": "/components/profile/"
+    },
+    
+    {
+        "title": "Inbox",
+        "url": "/components/inbox/"
+    },
+    
+    {
+        "title": "Pricing",
+        "url": "/components/pricing/"
+    },
+    
+]
