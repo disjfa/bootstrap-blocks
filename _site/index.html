@@ -42,8 +42,13 @@ title: Alle items
     <div class="row">
         {% for post in collections.page %}
             <div class="col-md-4 my-2">
-                <a href="{{ post.url | url }}">
-                    {{ post.data.title }}
+                <a href="{{ post.url | url }}" class="card h-100 bg-light">
+                    <img src="{{ post.url | prepend: "/screenshot" | append: "/screenshot.png" | url }}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{ post.data.title }}
+                        </h5>
+                    </div>
                 </a>
             </div>
         {% endfor %}

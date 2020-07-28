@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs');
 const request = require('request');
 const baseUrl = 'https://disjfa.github.io/bootstrap-blocks';
 
@@ -16,15 +17,27 @@ request.get({
     // for(let i in data) {
     //   console.log(i);
     // }
-    console.log(JSON.parse(data));
+    for (let i of data) {
+      const folderName = 'screenshot' + i.base;
+      console.log(folderName);
+       fs.mkdir(folderName, { recursive: true }, (err) => {
+        if (err) throw err;
+      });
+      (async () => {
+        const browser = await puppeteer.launch();
+        const page = await browser.newPage();
+        await page.setViewport({
+          width: 1280,
+          height: 960,
+          deviceScaleFactor: 1,
+        });
+        await page.goto('https://disjfa.github.io'+i.url);
+        await page.screenshot({ path: folderName + '/screenshot.png' });
+
+        await browser.close();
+      })();
+
+    }
   }
 });
 
-// (async () => {
-//   const browser = await puppeteer.launch();
-//   const page = await browser.newPage();
-//   await page.goto('https://disjfa.github.io/bootstrap-blocks/');
-//   await page.screenshot({path: 'example.png'});
-//
-//   await browser.close();
-// })();

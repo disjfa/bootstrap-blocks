@@ -5,6 +5,7 @@ const loadLanguages = require('prismjs/components/');
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPassthroughCopy("build");
+  eleventyConfig.addPassthroughCopy("screenshot");
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addFilter("myFilter", function (myVariable, lang= 'html') {
