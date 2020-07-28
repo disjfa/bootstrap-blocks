@@ -1,0 +1,13 @@
+---
+layout: layout.html
+title: Alle items
+---
+
+<div class="container py-3">
+    <h1>All pages</h1>
+    {% for post in collections.all %}
+        <a href="{{ post.url | url }}">
+            {{ post.data.title }}
+        </a>
+    {% endfor %}
+</div>
