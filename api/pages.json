@@ -8,14 +8,26 @@
     
     {
         "title": "Inbox",
-        "url": "/bootstrap-blocks/components/inbox/",
-        "base": "/components/inbox/"
+        "url": "/bootstrap-blocks/components/mail/inbox/",
+        "base": "/components/mail/inbox/"
     },
     
     {
         "title": "Pricing",
         "url": "/bootstrap-blocks/components/pricing/",
         "base": "/components/pricing/"
+    },
+    
+    {
+        "title": "Admin cards",
+        "url": "/bootstrap-blocks/components/admin/cards/",
+        "base": "/components/admin/cards/"
+    },
+    
+    {
+        "title": "News intro",
+        "url": "/bootstrap-blocks/components/news/intro/",
+        "base": "/components/news/intro/"
     }
     
 ]
