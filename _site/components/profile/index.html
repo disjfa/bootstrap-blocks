@@ -2,12 +2,11 @@
 layout: layout.html
 title: Profile page
 tags: page
+icon: fa fa-fw fa-user
 ---
 
-    {% capture my_variable -%}
-        {% include ./demo-1.html %}
-    {%- endcapture %}
+{% capture my_variable -%}
+    {% include ./demo-1.html %}
+{%- endcapture %}
 
-    {{ my_variable | myFilter: 'html' }}
-</div>
-
+{{ my_variable | myFilter: 'html' }}

@@ -8,8 +8,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("screenshot");
   eleventyConfig.setUseGitIgnore(false);
 
-  eleventyConfig.addFilter("myFilter", function (myVariable, lang= 'html') {
-
+  eleventyConfig.addFilter("myFilter", function (myVariable, lang = 'html') {
     let html = Prism.highlight(myVariable, Prism.languages[lang], lang);
     html = `<pre class="language-${lang}"><code class="language-${lang}">${html}</code></pre>`;
 
