@@ -13,16 +13,13 @@ request.get({
   } else if (res.statusCode !== 200) {
     console.error('Status:', res.statusCode);
   } else {
-    // data is already parsed as JSON:
-    // for(let i in data) {
-    //   console.log(i);
-    // }
     for (let i of data) {
       const folderName = 'screenshot' + i.base;
       console.log(folderName);
-       fs.mkdir(folderName, { recursive: true }, (err) => {
+      fs.mkdir(folderName, { recursive: true }, (err) => {
         if (err) throw err;
       });
+
       (async () => {
         const browser = await puppeteer.launch();
         const page = await browser.newPage();
@@ -31,12 +28,11 @@ request.get({
           height: 960,
           deviceScaleFactor: 1,
         });
-        await page.goto('https://disjfa.github.io'+i.url);
+        await page.goto('https://disjfa.github.io' + i.url);
         await page.screenshot({ path: folderName + '/screenshot.png' });
 
         await browser.close();
       })();
-
     }
   }
 });
