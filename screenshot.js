@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const request = require('request');
-const baseUrl = 'https://disjfa.github.io/bootstrap-blocks';
+const baseUrl = 'http://localhost:8080/bootstrap-blocks';
 
 request.get({
   url: baseUrl + '/api/pages.json',
@@ -28,7 +28,7 @@ request.get({
           height: 960,
           deviceScaleFactor: 1,
         });
-        await page.goto('https://disjfa.github.io' + i.url);
+        await page.goto('http://localhost:8080' + i.url);
         await page.screenshot({ path: folderName + '/screenshot.png' });
 
         await browser.close();

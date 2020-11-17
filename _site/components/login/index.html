@@ -1,0 +1,12 @@
+---
+layout: layout.html
+title: Login
+tags: page
+icon: fa fa-fw fa-sign-in-alt
+---
+
+{% capture my_variable -%}
+    {% include ./demo-1.html %}
+{%- endcapture %}
+
+{{ my_variable | myFilter: 'html' }}
