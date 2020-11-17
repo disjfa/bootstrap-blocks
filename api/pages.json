@@ -28,6 +28,12 @@
         "title": "News intro",
         "url": "/bootstrap-blocks/components/news/intro/",
         "base": "/components/news/intro/"
+    },
+    
+    {
+        "title": "Login",
+        "url": "/bootstrap-blocks/components/login/",
+        "base": "/components/login/"
     }
     
 ]
