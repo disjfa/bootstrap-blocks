@@ -34,6 +34,12 @@
         "title": "Login",
         "url": "/bootstrap-blocks/components/login/",
         "base": "/components/login/"
+    },
+    
+    {
+        "title": "Responsive grid",
+        "url": "/bootstrap-blocks/components/grid/repeat/",
+        "base": "/components/grid/repeat/"
     }
     
 ]

@@ -3,10 +3,12 @@
     "app": {
       "js": [
         "/bootstrap-blocks/build/runtime.5ce9254b.js",
-        "/bootstrap-blocks/build/app.1bbe080a.js"
+        "/bootstrap-blocks/build/0.efb0bc28.js",
+        "/bootstrap-blocks/build/app.37c4af99.js"
       ],
       "css": [
-        "/bootstrap-blocks/build/app.0c948f9c.css"
+        "/bootstrap-blocks/build/0.5a4d7bea.css",
+        "/bootstrap-blocks/build/app.c709fdc6.css"
       ]
     }
   }
