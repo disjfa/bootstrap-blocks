@@ -1,0 +1,12 @@
+---
+layout: layout.html
+title: Responsive grid
+tags: page
+icon: fa fa-fw fa-grip-horizontal
+---
+
+{% capture my_variable -%}
+    {% include ./demo-1.html %}
+{%- endcapture %}
+
+{{ my_variable | myFilter: 'html' }}
