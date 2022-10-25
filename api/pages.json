@@ -1,9 +1,15 @@
 [
     
     {
-        "title": "Profile page",
-        "url": "/bootstrap-blocks/components/profile/",
-        "base": "/components/profile/"
+        "title": "Admin cards",
+        "url": "/bootstrap-blocks/components/admin/cards/",
+        "base": "/components/admin/cards/"
+    },
+    
+    {
+        "title": "Responsive grid",
+        "url": "/bootstrap-blocks/components/grid/repeat/",
+        "base": "/components/grid/repeat/"
     },
     
     {
@@ -13,33 +19,33 @@
     },
     
     {
-        "title": "Pricing",
-        "url": "/bootstrap-blocks/components/pricing/",
-        "base": "/components/pricing/"
-    },
-    
-    {
-        "title": "Admin cards",
-        "url": "/bootstrap-blocks/components/admin/cards/",
-        "base": "/components/admin/cards/"
-    },
-    
-    {
         "title": "News intro",
         "url": "/bootstrap-blocks/components/news/intro/",
         "base": "/components/news/intro/"
     },
     
     {
-        "title": "Login",
-        "url": "/bootstrap-blocks/components/login/",
-        "base": "/components/login/"
+        "title": "Pricing",
+        "url": "/bootstrap-blocks/components/pricing/",
+        "base": "/components/pricing/"
     },
     
     {
-        "title": "Responsive grid",
-        "url": "/bootstrap-blocks/components/grid/repeat/",
-        "base": "/components/grid/repeat/"
+        "title": "Admin side panel",
+        "url": "/bootstrap-blocks/components/admin/sidemenu/",
+        "base": "/components/admin/sidemenu/"
+    },
+    
+    {
+        "title": "Profile page",
+        "url": "/bootstrap-blocks/components/profile/",
+        "base": "/components/profile/"
+    },
+    
+    {
+        "title": "Login",
+        "url": "/bootstrap-blocks/components/login/",
+        "base": "/components/login/"
     }
     
 ]
